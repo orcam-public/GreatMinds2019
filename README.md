@@ -22,7 +22,7 @@ submission = [[best_index, second_best, ..., fifth_best],
               [best_index, second_best, ..., fifth_best]]
 ```
 
-A correct index in the _ith_ index will add *100-10*i\* points to your score. So for example, hitting Top 1 will add 100 points to your score, while hitting 3rd will give you 80 points. Not including the correct index in the Top-5 list will not reward points. See the Solution Example to see how to wasily create a submission based on a similarity matrix.
+A correct index in the _ith_ index will add *100-10\*i* points to your score. So for example, hitting Top 1 will add 100 points to your score, while hitting 3rd will give you 80 points. Not including the correct index in the Top-5 list will not reward points. See the Solution Example to see how to wasily create a submission based on a similarity matrix.
 You can submit to the leaderboard by calling:
 
 ```python
