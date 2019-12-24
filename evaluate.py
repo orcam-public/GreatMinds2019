@@ -1,14 +1,12 @@
 from __future__ import print_function
 
-try:
-    from urllib.request import urlopen
-    from urllib.request import Request
-except ImportError:
-    from urllib2 import urlopen
-    from urllib2 import Request
-
 import json
 import numpy as np
+from urllib.request import Request
+from urllib.request import urlopen
+
+
+SERVER_URL = 'http://orcam-datahack-server.herokuapp.com/'
 
 
 def evaluate(submission, test_labels, verbose=True):
@@ -30,7 +28,7 @@ def submit(name, submission):
     # Submit your result to the leaderboard
     jsonStr = json.dumps({'submitter': name, 'predictions': submission})
     data = jsonStr.encode('utf-8')
-    req = Request('https://???.com/orcam/api',
+    req = Request(SERVER_URL,
                   headers={'Content-Type': 'application/json'},
                   data=data)
     resp = urlopen(req)
