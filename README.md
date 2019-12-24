@@ -23,7 +23,7 @@ submission = [[best_index, second_best, ..., fifth_best],
 ```
 
 A correct index in the _ith_ index will add *100-10\*i* points to your score. So for example, hitting Top 1 will add 100 points to your score, while hitting 3rd will give you 80 points. Not including the correct index in the Top-5 list will not reward points. See the Solution Example to see how to wasily create a submission based on a similarity matrix.
-You can submit to the leaderboard by calling:
+You can submit to the scoring-server by calling:
 
 ```python
 from evaluate import submit
@@ -31,12 +31,6 @@ submit('Team Name', submission)
 ```
 
 If you get a reply with a score of -1, it means something is wrong with your submission. Check the submission's shape matches the number of unique test sequences. Come see us if you need any help.
-
-## Leaderboard
-
-Once the hackathon starts we will publish a leaderboard that will display the latest and highest results from each team.
-Results until Wednesday evening will be based on a "public" subset of the evaluation data. Thursday evening the leaderboard will be reset, and submissions will be evaluated based on the "private" subset. You don't have to change anything on your side.
-The winners will be the ones who reach the end of the hackathon at the top of the table.
 
 ## Rules
 
